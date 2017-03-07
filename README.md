@@ -5,7 +5,7 @@ Program that will generate data trees and have a quiz mode to test users.
 D
 ## Group Members
 *Add your names below*
-*make me*
+Ashley Belshaw
 ## Tutor
 Wedad Alhoula
 
