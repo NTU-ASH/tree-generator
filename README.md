@@ -6,6 +6,8 @@ D
 ## Group Members
 *Add your names below*
 
+Jack Perry
+
 Ashley Belshaw
 
 Samuel Burdon
