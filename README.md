@@ -6,6 +6,8 @@ D
 ## Group Members
 *Add your names below*
 
+Edward McCready
+
 Jack Perry
 
 Ashley Belshaw
