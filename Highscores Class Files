@@ -1,0 +1,66 @@
+/*
+THIS CODE IS NOT YET FINISHED
+*/
+
+#include "stdafx.h"
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <ostream>
+#include <algorithm>
+using namespace std;
+
+const string fileName = "highscores.txt";
+
+// Struct holds a persons name and score
+struct person {
+	int score;
+	string name;
+};
+
+// Compares two passed scores, used in the sort
+bool sortingVector(const person& score1, const person& score2)
+{
+	return score1.score < score2.score;
+}
+
+int main() {
+
+	// Struct object used for passing values into vector
+	person Kappa;
+	// Vector to hold all of the highscores
+	vector<person> people;
+
+	/*--------------------------------------------------------------------------*/
+	// Below code reads file into struct object, pushes that to the back        //
+	// of the vector and then sorts it, putting the highest score at the start. //
+	/*--------------------------------------------------------------------------*/
+	ifstream file(fileName);
+
+	while (!file.eof()) {
+
+		file >> Kappa.name >> Kappa.score;
+		people.push_back(Kappa);
+	}
+
+	file.close();
+	sort(people.begin(), people.end(), sortingVector);
+
+	/*--------------------------------------------------------------------------*/
+	// Below code outputs the sorted scores back into the highscores file.       //
+	/*--------------------------------------------------------------------------*/
+
+	ofstream file2(fileName);
+	
+	for (int i = 0; people.size() > i; i++) {
+	
+		file2 << people[i].name << " " << people[i].score << "\n";
+	}
+
+	file2.close();
+
+
+
+}
