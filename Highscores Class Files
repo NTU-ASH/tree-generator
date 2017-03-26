@@ -1,7 +1,4 @@
-/*
-THIS CODE IS NOT YET FINISHED
-*/
-
+// Includes
 #include "stdafx.h"
 #include <fstream>
 #include <iostream>
@@ -11,6 +8,7 @@ THIS CODE IS NOT YET FINISHED
 #include <ostream>
 #include <algorithm>
 using namespace std;
+//
 
 const string fileName = "highscores.txt";
 
@@ -29,7 +27,7 @@ bool sortingVector(const person& score1, const person& score2)
 int main() {
 
 	// Struct object used for passing values into vector
-	person Kappa;
+	person personObjectHolder;
 	// Vector to hold all of the highscores
 	vector<person> people;
 
@@ -37,29 +35,29 @@ int main() {
 	// Below code reads file into struct object, pushes that to the back        //
 	// of the vector and then sorts it, putting the highest score at the start. //
 	/*--------------------------------------------------------------------------*/
-	ifstream file(fileName);
+	ifstream readHighscores(fileName);
 
-	while (!file.eof()) {
+	while (!readHighscores.eof()) {
 
-		file >> Kappa.name >> Kappa.score;
-		people.push_back(Kappa);
+		readHighscores >> personObjectHolder.name >> personObjectHolder.score;
+		people.push_back(personObjectHolder);
 	}
 
-	file.close();
+	readHighscores.close();
 	sort(people.begin(), people.end(), sortingVector);
 
 	/*--------------------------------------------------------------------------*/
 	// Below code outputs the sorted scores back into the highscores file.       //
 	/*--------------------------------------------------------------------------*/
 
-	ofstream file2(fileName);
+	ofstream writeSortedHighscores(fileName);
 	
 	for (int i = 0; people.size() > i; i++) {
 	
-		file2 << people[i].name << " " << people[i].score << "\n";
+		writeSortedHighscores << people[i].name << " " << people[i].score << "\n";
 	}
 
-	file2.close();
+	writeSortedHighscores.close();
 
 
 
