@@ -1,6 +1,3 @@
-// Quiz.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <stdlib.h>
 #include <time.h>
@@ -111,10 +108,5 @@ int main()
 			std::cout << "Invisible Node" << std::endl;
 		}
 	}
-	while (true)
-	{
-
-	}
     return 0;
 }
-
