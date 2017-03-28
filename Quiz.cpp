@@ -53,8 +53,6 @@ int main()
 		values = "0123456789";
 		maxChars = 10;
 	}
-	int randomLetter;
-	int visibility;
 	int invisibleCount;
 	//set difficulty
 	enum {
@@ -78,6 +76,8 @@ int main()
 		std::cout << "Difficulty is set to hard" << std::endl;
 		invisibleCount = 6;
 	}
+	int randomLetter;
+	int visibility;
 	//set visibility
 	enum {
 		invisible,
