@@ -1,0 +1,43 @@
+Insertion Sort Algorithm for sorting list of numbers
+
+int[] sortNumberedArray(int enteredNumbers)
+{
+	for (int i = 1; i < (sizeof(enteredNumbers) / sizeof(*enteredNumbers)); i++)
+	{
+		int temp = enteredNumbers[i];
+		int j = i - 1;
+		while ((temp < enteredNumbers[j]) && (j >= 0)
+		{
+			enteredNumbers[j + 1] = enteredNumbers[j];
+			j = j - 1;
+		}
+	
+		enteredNumbers[j + 1] = temp;
+	}
+
+	return enteredNumbers;
+}
+
+Insertion Sort Algorithm for sorting list of letters
+
+//letters already have ASCII values which correspond in order so A < B < C < D... 
+//just make sure we keep to one case as B < a.
+//Array must be of char type for this to work. Tested in a basic c++ program.
+
+char[] sortNumberedArray(int enteredLetters)
+{
+	for (int i = 1; i < (sizeof(enteredLetters) / sizeof(*enteredLetters)); i++)
+	{
+		int temp = enteredLetters[i];
+		int j = i - 1;
+		while ((temp < enteredLetters[j]) && (j >= 0))
+		{
+			enteredLetters[j + 1] = enteredLetters[j];
+			j = j - 1;
+		}
+	
+		enteredLetters[j + 1] = temp;
+	}
+
+	return enteredLetters;
+}

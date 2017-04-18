@@ -1,0 +1,28 @@
+Algorithm to poulate a tree in order from enteredNumbers
+
+void Tree::setBinarySearchTreeData(int sortedData) // for letters change to char
+{
+	int dataIndex = 0;
+	rootNode = getRootNodePos();
+	populateNode(rootNode, enteredData, dataIndex)
+}
+
+
+
+int Tree::populateNode(Node treeNode, int enteredData, int dataIndex)
+{
+	if (treeNode.getLeftPos() != NULL)
+	{
+		treeNode = treeNode.getLeftPos(); 
+		dataIndex = populateNode(treeNode, enteredData, dataIndex); //so it gets updated index
+	}
+	treeNode.setNodeData(enteredData[dataIndex]);
+	dataIndex++;
+	if (treeNode.getRightPos() != NULL)
+	{
+		treeNode = treeNode.getRightPos();
+		dataIndex = populateNode(treeNode, enteredData, dataIndex); //so it gets updated index
+	}
+
+	return dataIndex;
+}

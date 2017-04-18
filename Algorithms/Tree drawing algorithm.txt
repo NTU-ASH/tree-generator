@@ -1,0 +1,97 @@
+Algorithm to draw a tree based on size of array of data given
+
+int sizeData = sizeof(enteredLetters) / sizeof(*enteredLetters) // change for numbers
+
+void Tree::createBinarySearchTree(int sizeData)
+{
+	createRootNode();
+	sizeData -= 1;
+
+	//tree object would have an array of node positions which are originally initalised to NULL.
+	//Only will have a node attached if there is data to fill the node. 
+	for (i = 0; i < sizeData; i++)
+	{
+		nodePosArray[i] = createNode();
+	}
+		
+	
+	if (sizeData == 1)
+	{
+		createLeftNode(nodePosArray[1], nodePosArray[2] )
+	}
+	if (sizeData == 2)
+	{
+		createRightNode(nodePosArray[1], nodePosArray[3])
+	}
+	if (sizeData == 3)
+	{
+		createLeftNode(nodePosArray[2], nodePosArray[4])
+	}
+	if (sizeData == 4)
+	{
+		linkLeftNode(nodePosArray[3], nodePosArray[5])
+	}
+	if (sizeData == 5)
+	{
+		linkRightNode(nodePosArray[2], nodePosArray[6])
+	}
+	if (sizeData == 6)
+	{
+		linkRightNode(nodePosArray[3], nodePosArray[7])
+	}
+	if (sizeData == 7)
+	{
+		linkLeftNode(nodePosArray[4], nodePosArray[8])
+	}
+	if (sizeData == 8)
+	{
+		linkLeftNode(nodePosArray[5], nodePosArray[9])
+	}
+	if (sizeData == 9)
+	{
+		linkLeftNode(nodePosArray[6], nodePosArray[10])
+	}
+	if (sizeData == 10)
+	{
+		linkLeftNode(nodePosArray[7], nodePosArray[11])
+	}
+	if (sizeData == 11)
+	{
+		linkRightNode(nodePosArray[4], nodePosArray[12])
+	}
+	if (sizeData == 12)
+	{
+		linkRightNode(nodePosArray[5], nodePosArray[13])
+	}
+	if (sizeData == 13)
+	{
+		linkRightNode(nodePosArray[6], nodePosArray[14])
+	}
+	if (sizeData == 14)
+	{
+		linkRightNode(nodePosArray[7], nodePosArray[15])
+	}
+	
+}
+
+void Tree::linkLeftNode(Node parent, Node nodePos)
+{
+	//code to link nodes
+	//e.g. parent.setLeftNode(nodePos);
+}
+
+void Tree::linkRightNode(Node parent, Node nodePos)
+{
+	//code to link nodes
+	//e.g. parent.setLeftNode(nodePos);
+}
+
+void Tree::createRootNode()
+{
+	//code to create node
+}
+
+void Tree::createNode()
+{
+	//code to create node
+}

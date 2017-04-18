@@ -1,0 +1,70 @@
+Pre-Order Traversal Algorithm
+
+void preTraverseTree(Tree tree)
+{
+	treeNode = tree.getRootNode();
+	preTraverseNode(treeNode);
+
+}
+
+void preTraverseNode(Node treeNode)
+{
+	output(treeNode.getData());
+	if (treeNode.getLeft() != NULL)
+	{
+		treeNode = treeNode.getLeft();
+		preTraverseNode(treeNode);
+	}
+	if (treeNode.getRight() != NULL)
+	{
+		treeNode = treeNode.getRight();
+		preTraverseNode(treeNode);
+	}
+}
+
+Post-Order Traversal Algorithm
+
+void postTraverseTree(Tree tree)
+{
+	treeNode = tree.getRootNode();
+	postTraverseNode(treeNode);
+}
+
+void postTraverseNode(Node treeNode)
+{
+	if (treeNode.getLeft() != NULL)
+	{
+		treeNode = treeNode.getLeft();
+		postTraverseNode(treeNode);
+	}
+	if (treeNode.getRight() != NULL)
+	{
+		treeNode = treeNode.getRight();
+		postTraverseNode(treeNode);
+	}
+	output(treeNode.getData());
+}
+
+In-Order Traversal Algorithm
+
+void inTraverseTree(Tree tree)
+{
+	treeNode = tree.getRootNode();
+	inTraverseNode(treeNode);
+}
+
+void inTraverseNode(Node treeNode)
+{
+	if (treeNode.getLeft() != NULL)
+	{
+		treeNode = treeNode.getLeft();
+		inTraverseNode(treeNode);
+	}
+	output(treeNode.getData());
+	if (treeNode.getRight() != NULL)
+	{
+		treeNode = treeNode.getRight();
+		inTraverseNode(treeNode);
+	}
+}
+
