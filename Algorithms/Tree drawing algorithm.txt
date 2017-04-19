@@ -15,59 +15,59 @@ void Tree::createBinarySearchTree(int sizeData)
 	}
 		
 	
-	if (sizeData == 1)
+	if (sizeData >= 1)
 	{
 		createLeftNode(nodePosArray[1], nodePosArray[2] )
 	}
-	if (sizeData == 2)
+	if (sizeData >= 2)
 	{
 		createRightNode(nodePosArray[1], nodePosArray[3])
 	}
-	if (sizeData == 3)
+	if (sizeData >= 3)
 	{
 		createLeftNode(nodePosArray[2], nodePosArray[4])
 	}
-	if (sizeData == 4)
+	if (sizeData >= 4)
 	{
 		linkLeftNode(nodePosArray[3], nodePosArray[5])
 	}
-	if (sizeData == 5)
+	if (sizeData >= 5)
 	{
 		linkRightNode(nodePosArray[2], nodePosArray[6])
 	}
-	if (sizeData == 6)
+	if (sizeData >= 6)
 	{
 		linkRightNode(nodePosArray[3], nodePosArray[7])
 	}
-	if (sizeData == 7)
+	if (sizeData >= 7)
 	{
 		linkLeftNode(nodePosArray[4], nodePosArray[8])
 	}
-	if (sizeData == 8)
+	if (sizeData >= 8)
 	{
 		linkLeftNode(nodePosArray[5], nodePosArray[9])
 	}
-	if (sizeData == 9)
+	if (sizeData >= 9)
 	{
 		linkLeftNode(nodePosArray[6], nodePosArray[10])
 	}
-	if (sizeData == 10)
+	if (sizeData >= 10)
 	{
 		linkLeftNode(nodePosArray[7], nodePosArray[11])
 	}
-	if (sizeData == 11)
+	if (sizeData >= 11)
 	{
 		linkRightNode(nodePosArray[4], nodePosArray[12])
 	}
-	if (sizeData == 12)
+	if (sizeData >= 12)
 	{
 		linkRightNode(nodePosArray[5], nodePosArray[13])
 	}
-	if (sizeData == 13)
+	if (sizeData >= 13)
 	{
 		linkRightNode(nodePosArray[6], nodePosArray[14])
 	}
-	if (sizeData == 14)
+	if (sizeData >= 14)
 	{
 		linkRightNode(nodePosArray[7], nodePosArray[15])
 	}
