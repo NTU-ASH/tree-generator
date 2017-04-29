@@ -19,3 +19,32 @@ User must be able to add text to the tree nodes/linked list.
 User must be able to enter a traversal type for the generator.
 Easy to follow and understand menus.
 Must be able to display the possible value for the nodes.
+
+
+REQUIERMENTS SPECIFICATION
+
+For the requirements specification we used UML (Unified Modelling Language) including, use case diagrams, Activity/ Sequence Diagrams, Class Diagrams. 
+
+USE CASE
+
+The below use case shows the possible actions and interactions the user will be making with the system, this includes option paths and actions and interactions of which lead to more possible interactions and actions until the end goal is achieved and the user is finished using the system.
+
+<Diagram goes here>
+
+ACTIVITY DIAGRAM
+
+The activity diagram shown below is used to show the flow from one activity to another, similar to a flow chart, each activity an ‘operation’ of the system and the flow normally involving input from the user.
+
+<Diagram goes here>
+
+SEQUENCE DIAGRAM
+
+The sequence diagram, shown below, is used to show how the different objects within the system interact with each other in time sequence. Depicting the objects and classes and the messages sent between them needed to carry out the functionality of the scenario in question.
+
+<Diagram goes here>
+
+CLASS DIAGRAM
+
+The class diagram shown below shows the static structure of the system, by showing the classes within our system, their attributes and operations (Methods in this case), and the relationship among the classes.
+<Diagram goes here>
+
