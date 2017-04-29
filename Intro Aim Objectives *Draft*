@@ -46,5 +46,6 @@ The sequence diagram, shown below, is used to show how the different objects wit
 CLASS DIAGRAM
 
 The class diagram shown below shows the static structure of the system, by showing the classes within our system, their attributes and operations (Methods in this case), and the relationship among the classes.
+
 <Diagram goes here>
 
