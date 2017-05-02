@@ -49,3 +49,5 @@ The class diagram shown below shows the static structure of the system, by showi
 
 <Diagram goes here>
 
+OUR ADOPTED APPROACH
+We decided to use the ‘AGILE’ software development life cycle throughout the creation of this software. Agile involves a specific process flow of working, the project is first envisioned and priorities are figured out as to decide of which order things should be done, in our case, because we were working in a group we split off into different areas of the software programming, meaning priorities were also decided on which of the classes also relied on other classes, to priorities the order of the classes to be developed.
